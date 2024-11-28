@@ -34,7 +34,8 @@ p {
   margin: 0;
 }
 
-input {
+input,
+select {
   font-family: "Oswald", "Expletus Sans", sans-serif, serif;
   transition: var(--default-transition);
 }
