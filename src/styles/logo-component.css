@@ -1,0 +1,22 @@
+.logo-cont {
+  position: relative;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.logo-cont img:nth-child(1) {
+  animation: spin 14s infinite linear;
+  width: 200px;
+  position: absolute;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

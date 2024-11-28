@@ -1,0 +1,44 @@
+.theme-btn-cont {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid var(--alt-bg-color);
+  color: var(--alt-text-color);
+  background-color: var(--alt-bg-color);
+  border-radius: 10px 0px 0px 10px;
+  gap: 10px;
+  top: 50%;
+  right: -115px;
+  transition: var(--default-transition);
+}
+
+.theme-btn-cont.active {
+  right: 0;
+}
+
+.theme-btns {
+  display: flex;
+  gap: 5px;
+}
+
+.light-btn,
+.dark-btn,
+.light-btn:hover,
+.dark-btn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--alt-border-color);
+  color: var(--alt-text-color);
+  background-color: var(--alt-bg-color);
+}
+
+.light-btn.active,
+.dark-btn.active,
+.light-btn:hover,
+.dark-btn:hover {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  border: 1px solid var(--main-border-color);
+}
