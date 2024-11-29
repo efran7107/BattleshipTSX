@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { functions } from "../ts/functions";
 import { useUser } from "../ts/providers-context";
-
+import "../styles/name-input.css";
 export const NameInput = () => {
-  const { name, setName, phase, setPhase, difficulty, setDifficulty } =
-    useUser();
+  const { name, setName, setPhase, difficulty, setDifficulty } = useUser();
+  const [isFirstSignUp, setIsFirstSignUp] = useState(true);
+
   return (
     <div className="name-input">
       <div className="name-container">
@@ -15,6 +17,8 @@ export const NameInput = () => {
           onChange={(e) => setName(e.currentTarget.value)}
         />
       </div>
+
+      {!isFirstSignUp && <p>Please Enter a Valid Name to begin</p>}
       <div className="difficulty">
         <label htmlFor="difficulty">Difficulty: </label>
         <select
@@ -30,7 +34,14 @@ export const NameInput = () => {
           <option value="hard">Hard</option>
         </select>
       </div>
-      <input type="submit" value="Start" onClick={() => setPhase("in-game")} />
+      <input
+        id="start"
+        type="submit"
+        value="Start"
+        onClick={() =>
+          name.trim().length >= 2 ? setPhase("set-up") : setIsFirstSignUp(false)
+        }
+      />
     </div>
   );
 };

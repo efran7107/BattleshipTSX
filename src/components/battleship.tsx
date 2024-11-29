@@ -1,4 +1,5 @@
 import { useUser } from "../ts/providers-context";
+import { Gameboard } from "./gameboard";
 import { NameInput } from "./name-input";
 
 export const Battleship = () => {
@@ -6,7 +7,10 @@ export const Battleship = () => {
   return (
     <>
       <h1>Battleship</h1>
-      <div className="contianer">{phase === "start" && <NameInput />}</div>
+      <div className="contianer">
+        {phase === "start" && <NameInput />}
+        {phase !== "start" && <Gameboard />}
+      </div>
     </>
   );
 };

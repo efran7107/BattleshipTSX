@@ -1,0 +1,36 @@
+.name-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.name-container input {
+  border: 1px solid var(--main-border-color);
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+#name:focus-visible,
+#difficulty:focus-visible {
+  outline: 3px solid var(--main-border-color);
+}
+
+#difficulty {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--main-border-color);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+#start {
+  border: 1px solid var(--main-border-color);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  border-radius: 10px;
+}
