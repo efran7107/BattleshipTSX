@@ -13,6 +13,7 @@ export type tile = {
 }
 
 export type ship = {
+    id: string;
     name: shipName;
     spaces: 5 | 4 | 3 | 2 | 1;
     hits: 5 | 4 | 3 | 2 | 1;
