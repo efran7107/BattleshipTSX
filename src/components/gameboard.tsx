@@ -2,6 +2,7 @@ import { useState } from "react";
 import { functions } from "../ts/functions"
 import { useUser } from "../ts/providers-context";
 import { UserGameboaard } from "./gameboard-coponents/user-gameboard";
+import "../styles/user-board.css"
 
 export const Gameboard = () => {
     const {name} = useUser();

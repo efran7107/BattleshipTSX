@@ -30,12 +30,13 @@ body {
   transition: var(--default-transition);
 }
 
-p {
+p, h4 {
   margin: 0;
 }
 
 input,
-select {
+select,
+button {
   font-family: "Oswald", "Expletus Sans", sans-serif, serif;
   transition: var(--default-transition);
 }

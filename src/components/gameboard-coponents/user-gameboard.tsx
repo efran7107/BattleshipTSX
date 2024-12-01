@@ -1,5 +1,6 @@
 import { ComponentProps } from "react"
 import { player, tile } from "../../types/types"
+import "../../styles/user-board.css"
 
 type tileButtonProps = ComponentProps<"button">
 
@@ -22,7 +23,7 @@ export const UserGameboaard = ({user, setUser}: {user: player, setUser: (user: p
             </div>
             <div className="game-tiles-cont">
                 {tiles.map((tile) => <GameTile key={tile.id} gameTile={tile}
-                tileButtonProps={{onClick: () => setUser(user)}}/>)}
+                tileButtonProps={{onClick: () => setUser(user), disabled: user.name === "cpu"}}/>)}
             </div>
         </div>
     )
