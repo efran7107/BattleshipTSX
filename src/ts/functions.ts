@@ -39,6 +39,7 @@ const getGrid = (): tile[] => {
 const getShips = (owner: string): ship[] => {
   return [
     {
+      id: '0',
       name: "Carrier",
       spaces: 5,
       hits: 5,
@@ -47,6 +48,7 @@ const getShips = (owner: string): ship[] => {
       isSunk: false,
     },
     {
+      id: '1',
       name: "Battleship",
       spaces: 4,
       hits: 4,
@@ -55,6 +57,7 @@ const getShips = (owner: string): ship[] => {
       isSunk: false,
     },
     {
+      id: '2',
       name: "Destroyer",
       spaces: 3,
       hits: 3,
@@ -63,6 +66,7 @@ const getShips = (owner: string): ship[] => {
       isSunk: false,
     },
     {
+      id: '3',
       name: "Submarine",
       spaces: 3,
       hits: 3,
@@ -71,6 +75,7 @@ const getShips = (owner: string): ship[] => {
       isSunk: false,
     },
     {
+      id: '4',
       name: "Patrol Boat",
       spaces: 2,
       hits: 2,

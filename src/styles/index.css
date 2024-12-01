@@ -1,22 +1,22 @@
 :root {
   font-family: "Oswald", "Expletus Sans", sans-serif, serif;
   --default-transition: all 0.5s ease;
-  --main-text-color: #00f034;
+  --main-text-color: #000b24;
   --main-bg-color: #0048f0;
   --main-border-color: #00f034;
   --main-hit-color: #f05000;
-  --alt-text-color: #009e22;
+  --alt-text-color: #0048f0;
   --alt-bg-color: #000b24;
   --alt-border-color: #009e22;
   --alt-hit-color: #d19800;
 }
 
 .dark {
-  --main-text-color: #009e22;
+  --main-text-color: #0048f0;
   --main-bg-color: #000b24;
   --main-border-color: #009e22;
   --main-hit-color: #d19800;
-  --alt-text-color: #00f034;
+  --alt-text-color: #000b24;
   --alt-bg-color: #0048f0;
   --alt-border-color: #00f034;
   --alt-hit-color: #f05000;

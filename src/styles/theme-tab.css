@@ -1,7 +1,7 @@
 .theme-btn-cont {
   position: fixed;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 5px 10px;
   border: 1px solid var(--alt-bg-color);
   color: var(--alt-text-color);
@@ -15,6 +15,11 @@
 
 .theme-btn-cont.active {
   right: 0;
+}
+
+.theme-tab {
+  display: flex;
+  align-items: center;
 }
 
 .theme-btns {

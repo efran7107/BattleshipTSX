@@ -10,9 +10,9 @@ export const ThemeTab = () => {
   return (
     <div
       className={`theme-btn-cont ${isActive ? "active" : ""}`}
-      onClick={() => setIsActive(!isActive)}
     >
-      <div className="theme-tab">
+      <div className="theme-tab"
+      onClick={() => setIsActive(!isActive)}>
         <i
           className={isActive ? right : left}
           onClick={() => setIsActive(!isActive)}
