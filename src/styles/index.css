@@ -30,6 +30,14 @@ body {
   transition: var(--default-transition);
 }
 
+h4 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}
+
 p, h4 {
   margin: 0;
 }
@@ -39,4 +47,9 @@ select,
 button {
   font-family: "Oswald", "Expletus Sans", sans-serif, serif;
   transition: var(--default-transition);
+  font-size: 20px;
+}
+
+label {
+  font-size: 20px;
 }
